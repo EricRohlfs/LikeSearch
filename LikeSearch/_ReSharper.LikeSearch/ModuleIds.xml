@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="3171B51B-E3A4-417B-8087-C93D64E21298" ModuleId="LikeSearch" />
+  <Module PersistentId="2CBD4119-994B-4482-B701-46DE5E605E72" ModuleId="LikeSearch.Test" />
+</Modules>

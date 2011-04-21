@@ -1,0 +1,11 @@
+C:\VSP\LikeSearch\LikeSearch.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\VSP\LikeSearch\LikeSearch.Test\bin\Debug\LikeSearch.Test.dll
+C:\VSP\LikeSearch\LikeSearch.Test\bin\Debug\LikeSearch.Test.pdb
+C:\VSP\LikeSearch\LikeSearch.Test\bin\Debug\LikeSearch.dll
+C:\VSP\LikeSearch\LikeSearch.Test\bin\Debug\nunit.framework.dll
+C:\VSP\LikeSearch\LikeSearch.Test\bin\Debug\nunit.mocks.dll
+C:\VSP\LikeSearch\LikeSearch.Test\bin\Debug\pnunit.framework.dll
+C:\VSP\LikeSearch\LikeSearch.Test\bin\Debug\LikeSearch.pdb
+C:\VSP\LikeSearch\LikeSearch.Test\bin\Debug\nunit.framework.xml
+C:\VSP\LikeSearch\LikeSearch.Test\obj\Debug\LikeSearch.Test.dll
+C:\VSP\LikeSearch\LikeSearch.Test\obj\Debug\LikeSearch.Test.pdb
