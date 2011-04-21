@@ -16,6 +16,7 @@ namespace LikeSearch
     /// matches the columns you are going to show on the grid. 
   
     /// </summary>
+  
    public interface IPaging
     {
        /// <summary>

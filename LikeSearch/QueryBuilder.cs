@@ -70,9 +70,9 @@ namespace LikeSearch
         public static Func<string, string> LikeExp = (fieldName) => string.Format("{0} LIKE {1}", fieldName, "@{0}");
         public static Func<string, string> LikeSqlParam = (likeVal) => string.Format("%{0}%", likeVal);
 
-        public IQueryBuilder Like(string fieldName, string likeVal, bool excludeIfValIsNull = true)
+        public IQueryBuilder AddLike(string fieldName, string likeVal, bool excludeIfValIsNullOrWhiteSpace = true)
         {
-            if (likeVal == null)
+            if (string.IsNullOrWhiteSpace(likeVal))
             {
                 System.Diagnostics.Trace.WriteLine(string.Format("{0} was not added to the like statement because the value was null",fieldName));
                 return this;

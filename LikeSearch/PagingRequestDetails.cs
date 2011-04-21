@@ -5,12 +5,17 @@ using System.Text;
 
 namespace LikeSearch
 {
+      [Serializable]
    public class PagingRequestDetails:IPaging
     {
        #region Implementation of IPaging
 
        public int CurrentPage { get; set; }
        public int RowsPerPage { get; set; }
+
+       /// <summary>
+       /// this value can never be null or empty
+       /// </summary>
        public string OrderBy { get; set; }
        public bool SortDesc { get; set; }
        public int TotalRowCount { get; set; }

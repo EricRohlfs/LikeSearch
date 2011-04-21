@@ -10,7 +10,7 @@ namespace LikeSearch
     {
         IQueryBuilder AddSelect(string fieldName, string asName = null);
         //IQueryBuilder AddFromTableName(string tableName);
-        IQueryBuilder Like(string fieldName, string likeVal,bool excludeIfNull = true);
+        IQueryBuilder AddLike(string fieldName, string likeVal,bool excludeIfNullOrWhiteSpace = true);
         
         /// <summary>
         /// For between items set the fieldName as null or sting.empty

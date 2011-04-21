@@ -82,6 +82,10 @@ namespace LikeSearch
         /// <param name="sortDesc"></param>
         private void AddRowNumber(string orderBy, bool sortDesc = false)
         {
+            if (string.IsNullOrWhiteSpace(orderBy))
+            {
+                throw new ArgumentException("You must set order by to a value in your table");
+            }
             var f = string.Format("Row_Number() over (order by {0} {1}) ", orderBy, sortDesc ? "DESC" : "ASC");
             InnerQuery.AddSelect(f, "RowNumber");
         }
