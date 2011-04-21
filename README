@@ -1,0 +1,5 @@
+A Simple fluent query builder for WebMatrix.data.
+The idea is to simplify the code for forms that collect input from the user and execute Like'%John B%' queries against the database.
+The benefits of using LikeSearch are: creates parameters for webmatrix.data, paging, and it is fluent.
+
+ 
