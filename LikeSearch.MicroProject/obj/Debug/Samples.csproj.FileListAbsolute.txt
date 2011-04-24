@@ -1,0 +1,7 @@
+C:\VSP\LikeSearch\Samples\obj\Debug\ResolveAssemblyReference.cache
+C:\VSP\LikeSearch\Samples\bin\Samples.dll
+C:\VSP\LikeSearch\Samples\bin\Samples.pdb
+C:\VSP\LikeSearch\Samples\bin\Microsoft.WebMatrix.dll
+C:\VSP\LikeSearch\Samples\bin\System.Data.SqlServerCe.dll
+C:\VSP\LikeSearch\Samples\obj\Debug\Samples.dll
+C:\VSP\LikeSearch\Samples\obj\Debug\Samples.pdb

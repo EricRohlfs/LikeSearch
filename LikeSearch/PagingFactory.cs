@@ -43,6 +43,7 @@ namespace LikeSearch
             RowsPerPage = rowsPerPage;
             OrderBy = orderBy;
             SortDesc = sortDesc;
+            AddRowNumber(OrderBy, SortDesc);
         }
         public PagingFactory(IQueryBuilder innerQuery, IPaging pagingDetails)
         {

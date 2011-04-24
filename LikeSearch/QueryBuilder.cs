@@ -121,6 +121,7 @@ namespace LikeSearch
         {
             var q = new QueryCommands { SelectCommand = "SELECT Count(*)", FromCommand = _queryCommandsObj.FromCommand };
             var wc = WhereCommandBuilder(Where);
+           
             q.WhereCommand = wc.WhereExpression;
             q.SqlParams = wc.SqlParameters;
             return q;

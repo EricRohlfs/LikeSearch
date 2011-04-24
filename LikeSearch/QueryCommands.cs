@@ -14,8 +14,8 @@ namespace LikeSearch
         public string WhereCommand { get; set; }
         public string CreateQuery()
         {
-         
-            var sf = string.Format("{0} {1} {2} ", SelectCommand.TrimStart(), FromCommand.TrimStart(), WhereCommand.TrimStart());
+          
+            var sf = string.Format("{0} {1} {2} ", SelectCommand.TrimStart(), FromCommand.TrimStart(), WhereCommand);
             return sf;
         }
     }
