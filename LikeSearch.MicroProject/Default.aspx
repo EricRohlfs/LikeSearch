@@ -14,7 +14,7 @@
        <br />
         <asp:Button ID="ButtonSearch" runat="server" Text="Button" 
             onclick="ButtonSearch_Click" />
-        <asp:PlaceHolder ID="PlaceHolderDataGrid1" runat="server"></asp:PlaceHolder>
+      
         <asp:Literal ID="LiteralGrid1" runat="server"></asp:Literal>
     </div>
     </form>
