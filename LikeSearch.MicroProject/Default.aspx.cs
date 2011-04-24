@@ -96,7 +96,7 @@ namespace Samples
             //first we need to bulid our new querystring.
             // it's a crying shame that QueryString does not appear to have a way to easily add new items.
             var qs = new NameValueCollection(Request.QueryString);
-            var t = totalRows / rowsPerPage;
+            var t = (totalRows / rowsPerPage) +1;
 
             var sb = new StringBuilder();
             // add one so we don't start with 0
