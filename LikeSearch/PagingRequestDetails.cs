@@ -18,7 +18,7 @@ namespace LikeSearch
        /// </summary>
        public string OrderBy { get; set; }
        public bool SortDesc { get; set; }
-       public int TotalRowCount { get; set; }
+      // public int TotalRowCount { get; set; }
 
        #endregion
 

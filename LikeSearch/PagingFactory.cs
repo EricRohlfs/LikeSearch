@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 
@@ -38,11 +39,29 @@ namespace LikeSearch
         //}
         public PagingFactory(IQueryBuilder innerQuery, int currentPage, int rowsPerPage, string orderBy, bool sortDesc = false)
         {
+            // Assert(CurrentPage > 0, "CurrentPage must be greater than zero.");
+            Contract.Requires<ArgumentOutOfRangeException>(currentPage > 0,
+                                                           "The currentPage property must have a value greater than 0");
+
+            Contract.Requires<ArgumentOutOfRangeException>(rowsPerPage > 0,
+                                                          "The rowsPerPage property must have a value greater than 0");
+            Contract.Requires<ArgumentOutOfRangeException>(string.IsNullOrWhiteSpace(orderBy),"orderBy property must not be null or whitespace, you need to set a default vaule.");
+
+            //ObjectDataSourc/Gridview combo adds dec to the order by for us, 
+            //so we want to remove desc from the string and set the sortDesc property to true.
+            if (orderBy.Contains(" DESC"))
+            {
+                sortDesc = true;
+                orderBy = orderBy.Replace(" DESC", "");
+            }
+
             InnerQuery = innerQuery;
             CurrentPage = currentPage;
             RowsPerPage = rowsPerPage;
             OrderBy = orderBy;
             SortDesc = sortDesc;
+           
+
             AddRowNumber(OrderBy, SortDesc);
         }
         public PagingFactory(IQueryBuilder innerQuery, IPaging pagingDetails)
@@ -60,6 +79,10 @@ namespace LikeSearch
 
         public virtual string CreateQuery()
         {
+            if (CurrentPage == 0)
+            {
+                CurrentPage = 1;
+            }
             //add the row number to the query must be done before we run the inner create query.
             
 

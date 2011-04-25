@@ -39,6 +39,26 @@ namespace LikeSearch
        /// </summary>
        bool SortDesc { get; set; }
 
-       int TotalRowCount { get; set; }
+     //  int TotalRowCount { get; set; }
+    }
+
+    /// <summary>
+    /// this is probably over engineering, but does add nice structure
+    /// </summary>
+    public interface IPagingResponse<TItems>
+    {
+        int TotalRows { get; set; }
+        IEnumerable<TItems> Data { get; set; }
+        
+    }
+
+    /// <summary>
+    /// use this interface for dynamic objects, there is one for strongly typed as well
+    /// </summary>
+    public interface IPagingResponse
+    {
+        int TotalRows { get; set; }
+        dynamic Data { get; set; }
+
     }
 }
