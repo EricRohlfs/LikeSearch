@@ -51,7 +51,6 @@ namespace LikeSearch
             //so we want to remove desc from the string and set the sortDesc property to true.
             if (orderBy.Contains(" DESC"))
             {
-                sortDesc = true;
                 orderBy = orderBy.Replace(" DESC", "");
             }
 
