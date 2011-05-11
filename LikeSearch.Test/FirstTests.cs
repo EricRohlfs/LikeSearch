@@ -12,6 +12,31 @@ namespace LikeSearch.Test
     {
 
         [Test]
+        public void WhereClauseEmpty()
+        {
+            var firstName = string.Empty;
+            var lastName = string.Empty;
+            var ds = new DateSearch("Created", "", "");
+            var q = QueryBuilderFactory.Init("Person");
+            q.AddSelect("FirstName")
+                .AddSelect("LastName")
+                .AddLike("FirstName", firstName)
+                .AddLike("LastName", lastName)
+                .AddBetween(ds);
+                
+
+            var pagingFactory = new PagingFactory(innerQuery: q, currentPage: 2, rowsPerPage: 10, orderBy: "FirstName");
+            var result = pagingFactory.CreateQuery();
+            Console.WriteLine(result);
+            var sqlParams = pagingFactory.CreateParameters();
+            Assert.IsTrue(sqlParams.Count() == 0);
+            var expectedNoEmptyWhere = "WHERE   ";
+            Assert.IsFalse(result.Contains(expectedNoEmptyWhere));
+
+        }
+
+
+        [Test]
         public void SunnyDay()
         {
             const string firstName = "Ja";

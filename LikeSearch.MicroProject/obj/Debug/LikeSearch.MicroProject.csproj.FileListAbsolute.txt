@@ -1,9 +1,12 @@
-C:\VSP\LikeSearch\LikeSearch.MicroProject\obj\Debug\ResolveAssemblyReference.cache
 C:\VSP\LikeSearch\LikeSearch.MicroProject\bin\Samples.dll
 C:\VSP\LikeSearch\LikeSearch.MicroProject\bin\Samples.pdb
+C:\VSP\LikeSearch\LikeSearch.MicroProject\bin\Glimpse.Net.dll
 C:\VSP\LikeSearch\LikeSearch.MicroProject\bin\LikeSearch.dll
 C:\VSP\LikeSearch\LikeSearch.MicroProject\bin\Microsoft.WebMatrix.dll
 C:\VSP\LikeSearch\LikeSearch.MicroProject\bin\System.Data.SqlServerCe.dll
 C:\VSP\LikeSearch\LikeSearch.MicroProject\bin\LikeSearch.pdb
+C:\VSP\LikeSearch\LikeSearch.MicroProject\obj\Debug\ResolveAssemblyReference.cache
 C:\VSP\LikeSearch\LikeSearch.MicroProject\obj\Debug\Samples.dll
 C:\VSP\LikeSearch\LikeSearch.MicroProject\obj\Debug\Samples.pdb
+C:\VSP\LikeSearch\LikeSearch.MicroProject\bin\Castle.Core.dll
+C:\VSP\LikeSearch\LikeSearch.MicroProject\bin\Castle.Core.xml

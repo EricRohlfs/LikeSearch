@@ -98,10 +98,17 @@ namespace LikeSearch
         /// <returns></returns>
         public IQueryBuilder AddWhere(string sqlParam, string expression)
         {
-            Where.Add(new WhereItem() { SqlParam = string.Empty, WhereExpression = expression });
+            Where.Add(new WhereItem() { SqlParam = sqlParam, WhereExpression = expression });
             return this;
         }
 
+        public IQueryBuilder AddBetween(DateSearch dateSearch)
+        {
+            var cmd = new DateSearchCommand();
+            var wi =  cmd.CreateQuery(dateSearch);
+            Where.Add(wi);
+            return this;
+        }
         public IQueryCommands Create(bool withSelectDistinct = false)
         {
             _queryCommandsObj.SelectCommand = SelectCommandBuilder(SelectFields, withSelectDistinct);
@@ -111,6 +118,7 @@ namespace LikeSearch
             return _queryCommandsObj;
         }
 
+    
 
 
         /// <summary>
@@ -154,14 +162,46 @@ namespace LikeSearch
 
             foreach (var item in expr)
             {
-                wc.SqlParameters.Add(item.SqlParam);
-                sb.Append(string.Format(item.WhereExpression, wc.SqlParameters.Count - 1));
+                //some items have more than one.
+                if (item.SqlParams.Count > 0)
+                {
+                   
+                    var collection = new List<object>();
+                    foreach (var sqlParam in item.SqlParams)
+                    {
+                        wc.SqlParameters.Add(sqlParam);
+
+                    } 
+                    var i = wc.SqlParameters.Count - item.SqlParams.Count;
+                    foreach (var sp in item.SqlParams)
+                    {
+                        collection.Add("@" + i);
+                        i++;
+                    }
+                    
+                    sb.Append(string.Format(item.WhereExpression, collection.ToArray()));
+                }
+                else
+                {
+                    if (item.SqlParam != null && item.WhereExpression != null)
+                    {
+                        wc.SqlParameters.Add(item.SqlParam);
+                        sb.Append(string.Format(item.WhereExpression, wc.SqlParameters.Count - 1));
+                    }
+                }
+              
+               
                 sb.Append(" AND ");
             }
 
+
             var wheres = sb.ToString();
             wheres = wheres.TrimEnd(' ').TrimEnd('D').TrimEnd('N').TrimEnd('A');
-            wc.WhereExpression = WhereExp(wheres);
+            // if there are not any items we don't want to add a where
+            if (!string.IsNullOrWhiteSpace(wheres))
+            {
+                wc.WhereExpression = WhereExp(wheres);
+            }
             return wc;
         }
     }

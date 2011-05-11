@@ -6,11 +6,6 @@ C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0
 C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0.45.62\bin\LikeSearch.pdb
 C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0.45.63\bin\LikeSearch.dll
 C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0.45.63\bin\LikeSearch.pdb
-C:\VSP\LikeSearch\LikeSearch\bin\Debug\LikeSearch.dll
-C:\VSP\LikeSearch\LikeSearch\bin\Debug\LikeSearch.pdb
-C:\VSP\LikeSearch\LikeSearch\obj\Debug\ResolveAssemblyReference.cache
-C:\VSP\LikeSearch\LikeSearch\obj\Debug\LikeSearch.dll
-C:\VSP\LikeSearch\LikeSearch\obj\Debug\LikeSearch.pdb
 C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0.45.64\bin\LikeSearch.dll
 C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0.45.64\bin\LikeSearch.pdb
 C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0.45.65\bin\LikeSearch.dll
@@ -21,3 +16,12 @@ C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0
 C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0.45.67\bin\LikeSearch.pdb
 C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0.45.68\bin\LikeSearch.dll
 C:\VSP\SLN\slnusbaum-website\Commercial\build\RealEstateCommercial.UmbracoUi.1.0.45.68\bin\LikeSearch.pdb
+C:\VSP\LikeSearch\LikeSearch\bin\Debug\LikeSearch.dll
+C:\VSP\LikeSearch\LikeSearch\bin\Debug\LikeSearch.pdb
+C:\VSP\LikeSearch\LikeSearch\obj\Debug\ResolveAssemblyReference.cache
+C:\VSP\LikeSearch\LikeSearch\obj\Debug\LikeSearch.rewritten
+C:\VSP\LikeSearch\LikeSearch\obj\Debug\LikeSearch.dll
+C:\VSP\LikeSearch\LikeSearch\obj\Debug\LikeSearch.pdb
+C:\VSP\LikeSearch\LikeSearch\obj\Debug\Decl\LikeSearch.dll
+C:\VSP\LikeSearch\LikeSearch\obj\Debug\Decl\LikeSearch.pdb
+C:\VSP\LikeSearch\LikeSearch\obj\Debug\CodeContractAnalysisRun.log

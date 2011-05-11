@@ -15,6 +15,7 @@ namespace Samples
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Trace.Write("page load starting");
             BuildGrid();
         }
 

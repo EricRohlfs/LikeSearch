@@ -45,7 +45,7 @@ namespace LikeSearch
 
             Contract.Requires<ArgumentOutOfRangeException>(rowsPerPage > 0,
                                                           "The rowsPerPage property must have a value greater than 0");
-            Contract.Requires<ArgumentOutOfRangeException>(string.IsNullOrWhiteSpace(orderBy),"orderBy property must not be null or whitespace, you need to set a default vaule.");
+            Contract.Requires<ArgumentOutOfRangeException>(!string.IsNullOrWhiteSpace(orderBy),"orderBy property must not be null or whitespace, you need to set a default vaule.");
 
             //ObjectDataSourc/Gridview combo adds dec to the order by for us, 
             //so we want to remove desc from the string and set the sortDesc property to true.
