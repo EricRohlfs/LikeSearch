@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using NUnit.Framework;
 using WebMatrix.Data;
 
@@ -10,6 +11,8 @@ namespace LikeSearch.Test
 {
     public class FirstTests
     {
+
+
 
         [Test]
         public void WhereClauseEmpty()
@@ -32,6 +35,8 @@ namespace LikeSearch.Test
             Assert.IsTrue(sqlParams.Count() == 0);
             var expectedNoEmptyWhere = "WHERE   ";
             Assert.IsFalse(result.Contains(expectedNoEmptyWhere));
+            var endAnd = AllTests.NoEmptyEndAnd(result);
+            Assert.IsTrue(endAnd.Result,endAnd.Msg);
 
         }
 
@@ -85,10 +90,10 @@ namespace LikeSearch.Test
             var query = q.Create().CreateQuery();
             Console.WriteLine("Query:" + query);
             Assert.IsFalse(query.ToLower().Contains("like"));
-
+            
         }
 
-        [Test]
+        //[Test]
         public void SimpleIntegrationTest()
         {
             var connStr =  ConfigurationManager.ConnectionStrings["MyConnStr"].ToString();
@@ -116,6 +121,52 @@ namespace LikeSearch.Test
                 Console.WriteLine(String.Format("First: {0} Last{1}", data.FirstName,data.LastName));
             }
             
+        }
+
+
+        [Test] 
+        public void RegexShouldReplaceAndWithEmpty()
+        {
+            var input = "test1 = 3 AND test2 = 5 AND";
+
+            var result= Regex.Replace(input, @" and$| AND$", "");
+
+            Console.WriteLine(input);
+            Console.WriteLine(result);
+            
+            var expected ="test1 = 3 AND test2 = 5";
+            Assert.AreEqual(expected,result);
+
+        }
+
+        [Test]
+        public void RegexShouldReplaceAndWithEmptyMixedCase()
+        {
+            var input = "test1 = 3 AND test2 = 5 and";
+
+            var noEndAnd = Regex.Replace(input, @" and$| AND$", "");
+
+            Console.WriteLine(input);
+            Console.WriteLine(noEndAnd);
+
+            var expected = "test1 = 3 AND test2 = 5";
+            Assert.AreEqual(expected, noEndAnd);
+
+        }
+
+        [Test]
+        public void ThereIsNoEndAnd()
+        {
+            var input = "test1 = 3 AND test2 = 5";
+
+            var noEndAnd = Regex.Replace(input, @" and$| AND$", "");
+
+            Console.WriteLine(input);
+            Console.WriteLine(noEndAnd);
+
+            var expected = "test1 = 3 AND test2 = 5";
+            Assert.AreEqual(expected, noEndAnd);
+
         }
     }
     }

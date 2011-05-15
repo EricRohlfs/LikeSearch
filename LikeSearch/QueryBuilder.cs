@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace LikeSearch
 {
@@ -157,11 +159,23 @@ namespace LikeSearch
         {
 
             if (expr.Count < 1) { return new WhereCommand(); }
+
+         
+
             var wc = new WhereCommand();
             var sb = new StringBuilder();
 
             foreach (var item in expr)
-            {
+            {  
+                
+                var emptyExpr = string.IsNullOrWhiteSpace(item.WhereExpression);
+                var paramVal = item.SqlParam.ToString();
+                var emptyparam = (string.IsNullOrWhiteSpace(paramVal) || paramVal == "System.Object");
+                var emptyparams = (item.SqlParams.Count > 0);
+                // if item is essentially null skip it
+                if (emptyExpr & emptyparam || emptyparams){continue;}
+
+
                 //some items have more than one.
                 if (item.SqlParams.Count > 0)
                 {
@@ -170,8 +184,7 @@ namespace LikeSearch
                     foreach (var sqlParam in item.SqlParams)
                     {
                         wc.SqlParameters.Add(sqlParam);
-
-                    } 
+                     } 
                     var i = wc.SqlParameters.Count - item.SqlParams.Count;
                     foreach (var sp in item.SqlParams)
                     {
@@ -196,11 +209,21 @@ namespace LikeSearch
 
 
             var wheres = sb.ToString();
-            wheres = wheres.TrimEnd(' ').TrimEnd('D').TrimEnd('N').TrimEnd('A');
-            // if there are not any items we don't want to add a where
-            if (!string.IsNullOrWhiteSpace(wheres))
+            
+            var noEndAnd = Regex.Replace(wheres.TrimEnd(), @" and$| AND$", "");
+            // just incase others end in and
+            while (Regex.IsMatch(noEndAnd,@" and$| AND$"))
             {
-                wc.WhereExpression = WhereExp(wheres);
+                noEndAnd = Regex.Replace(wheres.TrimEnd(), @" and$| AND$", "");
+            }
+
+            
+
+            
+            // if there are not any items we don't want to add a where
+            if (!string.IsNullOrWhiteSpace(noEndAnd))
+            {
+                wc.WhereExpression = WhereExp(noEndAnd);
             }
             return wc;
         }
