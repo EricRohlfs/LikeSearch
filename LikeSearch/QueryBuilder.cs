@@ -88,6 +88,35 @@ namespace LikeSearch
             return this;
         }
 
+       
+        /// <summary>
+        /// errors are thrown on empty filed name,
+        /// if value1 or value2 is null
+        /// 
+        /// the expression will be skipped of both values are string.empty.No error thrown.
+        /// </summary>
+        /// <param name="fieldName"></param>
+        /// <param name="value1"></param>
+        /// <param name="value2"></param>
+        /// <returns></returns>
+        public IQueryBuilder AddBetween(string fieldName, string value1, string value2)
+        {
+            Contract.Requires<ArgumentNullException>(!string.IsNullOrWhiteSpace(fieldName));
+            Contract.Requires<ArgumentNullException>(value1 != null || value2 != null);
+            string betweenExpression = "{0} BETWEEN {1} AND {2}";
+            var wi = new WhereItem();
+            // if there is no property name we can't really do anything.
+            if (string.IsNullOrWhiteSpace(value1) && string.IsNullOrWhiteSpace(value2)) { return this; }
+           
+            //put the property name in there then send in the other spaces
+            var expression = string.Format(betweenExpression, fieldName, "{0}", "{1}");
+            wi.WhereExpression = expression;
+
+            var prms = new List<object>(){value1,value2};
+            wi.SqlParams.AddRange(prms);
+            Where.Add(wi);
+            return this;
+        }
 
         /// <summary>
         /// where FirstName = "Eric"
@@ -98,9 +127,29 @@ namespace LikeSearch
         /// <param name="sqlParam"> "Eric"</param>
         /// <param name="expression">FirstName = @{0}</param>
         /// <returns></returns>
+        [Obsolete("use the other constructor")]
         public IQueryBuilder AddWhere(string sqlParam, string expression)
         {
             Where.Add(new WhereItem() { SqlParam = sqlParam, WhereExpression = expression });
+            return this;
+        }
+
+        /// <summary>
+        /// adds to the where expression.
+        /// </summary>
+        /// <param name="sqlField">e.g.. FirstName</param>
+        /// <param name="operationSymbol"> greater than less than equal too</param>
+        /// <param name="paramValue">"Fred"</param>
+        /// <param name="skipOnEmptyParamValue"></param>
+        /// <returns></returns>
+        public IQueryBuilder AddWhere(string sqlField, string operationSymbol, string paramValue, bool skipOnEmptyParamValue = true)
+        {
+            //don't add this to the list.
+            if (skipOnEmptyParamValue && string.IsNullOrWhiteSpace(paramValue)) { return this; }
+
+            var expression = string.Format(@" {0} {1} ", sqlField, operationSymbol ) + " @{0} ";
+            
+            Where.Add(new WhereItem() { SqlParam = paramValue, WhereExpression = expression });
             return this;
         }
 
@@ -171,9 +220,9 @@ namespace LikeSearch
                 var emptyExpr = string.IsNullOrWhiteSpace(item.WhereExpression);
                 var paramVal = item.SqlParam.ToString();
                 var emptyparam = (string.IsNullOrWhiteSpace(paramVal) || paramVal == "System.Object");
-                var emptyparams = (item.SqlParams.Count > 0);
+                var emptyparams = !(item.SqlParams.Count > 0);
                 // if item is essentially null skip it
-                if (emptyExpr & emptyparam || emptyparams){continue;}
+                if (emptyExpr & (emptyparam || emptyparams)){continue;}
 
 
                 //some items have more than one.

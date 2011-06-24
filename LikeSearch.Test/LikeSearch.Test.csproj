@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AllTests.cs" />
+    <Compile Include="BetweenTest.cs" />
     <Compile Include="DateTesting.cs" />
     <Compile Include="FirstTests.cs" />
     <Compile Include="ObjectDataSourceTest.cs" />

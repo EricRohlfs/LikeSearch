@@ -16,13 +16,10 @@ namespace LikeSearch.Test
            List<WhereItem> items = new List<WhereItem>();
            items.Add(new WhereItem(){SqlParam = "Test",WhereExpression = "test1={0}"});
 
-
            var result = QueryBuilder.WhereCommandBuilder(items);
            Console.WriteLine(result.WhereExpression);
 
            Assert.IsFalse(Regex.IsMatch(result.WhereExpression,@" and$|AND$"));
-
-
        }
 
        [Test]
@@ -40,5 +37,7 @@ namespace LikeSearch.Test
 
 
        }
+
+
     }
 }

@@ -14,52 +14,53 @@
       <File id="4A4584C1-5378-4171-AE92-06BE368CBFC8/f:SampleObjectDataSource.aspx" caret="0" fromTop="0" />
       <File id="4A4584C1-5378-4171-AE92-06BE368CBFC8/f:Web.config" caret="200" fromTop="5" />
       <File id="4A4584C1-5378-4171-AE92-06BE368CBFC8/f:Default.aspx" caret="0" fromTop="0" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryCommands.cs" caret="134" fromTop="7" />
       <File id="4A4584C1-5378-4171-AE92-06BE368CBFC8/f:Default.aspx.cs" caret="595" fromTop="0" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:IQueryBuilder.cs" caret="732" fromTop="14" />
       <File id="4A4584C1-5378-4171-AE92-06BE368CBFC8/d:repository/f:PersonRepository.cs" caret="1569" fromTop="11" />
       <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:DateSearch.cs" caret="972" fromTop="11" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:DateSearchCommand.cs" caret="1895" fromTop="11" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:WhereCommand.cs" caret="321" fromTop="5" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:PagingFactory.cs" caret="1222" fromTop="9" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:AllTests.cs" caret="518" fromTop="14" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:DateTesting.cs" caret="1549" fromTop="19" />
       <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:ObjectDataSourceTest.cs" caret="230" fromTop="13" />
       <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="5680" fromTop="20" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="7732" fromTop="14" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="797" fromTop="18" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="1283" fromTop="34" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:AllTests.cs" caret="456" fromTop="18" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:IQueryBuilder.cs" caret="494" fromTop="13" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:DateTesting.cs" caret="1051" fromTop="9" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:DateSearchCommand.cs" caret="2313" fromTop="28" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:PagingFactory.cs" caret="4442" fromTop="16" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:WhereCommand.cs" caret="267" fromTop="0" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryCommands.cs" caret="436" fromTop="16" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="4093" fromTop="17" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:BetweenTest.cs" caret="1358" fromTop="19" />
     </RecentFiles>
     <RecentEdits>
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:DateTesting.cs" caret="5842" fromTop="23" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:DateTesting.cs" caret="5842" fromTop="4" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="1339" fromTop="17" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="753" fromTop="18" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="479" fromTop="9" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="7822" fromTop="22" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="284" fromTop="10" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:AllTests.cs" caret="184" fromTop="8" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:AllTests.cs" caret="776" fromTop="25" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="1335" fromTop="16" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:AllTests.cs" caret="224" fromTop="7" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:AllTests.cs" caret="518" fromTop="14" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:DateTesting.cs" caret="1549" fromTop="19" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="8989" fromTop="13" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="3398" fromTop="13" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="4718" fromTop="16" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="4845" fromTop="20" />
       <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="5241" fromTop="11" />
       <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="5883" fromTop="28" />
       <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:FirstTests.cs" caret="5606" fromTop="18" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="7595" fromTop="18" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="5947" fromTop="11" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="8978" fromTop="18" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="7329" fromTop="11" />
       <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="151" fromTop="4" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="7515" fromTop="10" />
-      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="7732" fromTop="14" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="655" fromTop="22" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="8897" fromTop="10" />
       <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="269" fromTop="13" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="1285" fromTop="28" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="738" fromTop="16" />
-      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="766" fromTop="18" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="732" fromTop="16" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="760" fromTop="18" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:IQueryBuilder.cs" caret="548" fromTop="13" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="894" fromTop="14" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="4767" fromTop="13" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="5826" fromTop="26" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="4331" fromTop="13" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="4671" fromTop="25" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="4214" fromTop="17" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="3560" fromTop="5" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="452" fromTop="14" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="658" fromTop="19" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:WhereCommandTests.cs" caret="1292" fromTop="34" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:BetweenTest.cs" caret="2843" fromTop="26" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:BetweenTest.cs" caret="1471" fromTop="26" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="4699" fromTop="24" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="9111" fromTop="14" />
+      <File id="3171B51B-E3A4-417B-8087-C93D64E21298/f:QueryBuilder.cs" caret="4093" fromTop="17" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:BetweenTest.cs" caret="1043" fromTop="24" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:BetweenTest.cs" caret="309" fromTop="13" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:BetweenTest.cs" caret="507" fromTop="18" />
+      <File id="2CBD4119-994B-4482-B701-46DE5E605E72/f:BetweenTest.cs" caret="1343" fromTop="18" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -74,8 +75,8 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="39" />
-      <Item value="string" priority="53" />
+      <Item value="public" priority="40" />
+      <Item value="string" priority="59" />
       <Item value="EnvironmentVariableTarget`0" priority="0" />
       <Item value="Func" priority="3" />
       <Item value="int" priority="11" />
@@ -87,12 +88,12 @@
       <Item value="const" priority="1" />
       <Item value="csv" priority="0" />
       <Item value="static" priority="8" />
-      <Item value="var" priority="86" />
+      <Item value="var" priority="90" />
       <Item value="selectFields" priority="0" />
       <Item value="for" priority="4" />
       <Item value="expr" priority="0" />
       <Item value="wheres" priority="4" />
-      <Item value="fieldName" priority="2" />
+      <Item value="fieldName" priority="3" />
       <Item value="asName" priority="0" />
       <Item value="FromExp" priority="0" />
       <Item value="tableName" priority="0" />
@@ -105,7 +106,7 @@
       <Item value="AddFromTableName`0" priority="0" />
       <Item value="tableOrViewName" priority="0" />
       <Item value="private" priority="1" />
-      <Item value="QueryBuilderFactory`0" priority="3" />
+      <Item value="QueryBuilderFactory`0" priority="4" />
       <Item value="PagingFactory`0" priority="4" />
       <Item value="qwithPaging" priority="0" />
       <Item value="void" priority="7" />
@@ -116,8 +117,8 @@
       <Item value="String`0" priority="0" />
       <Item value="pps" priority="8" />
       <Item value="PersonRepository`0" priority="0" />
-      <Item value="return" priority="10" />
-      <Item value="new" priority="36" />
+      <Item value="return" priority="13" />
+      <Item value="new" priority="38" />
       <Item value="Person" priority="0" />
       <Item value="List" priority="13" />
       <Item value="IEnumerable" priority="3" />
@@ -147,7 +148,7 @@
       <Item value="Web" priority="0" />
       <Item value="source" priority="1" />
       <Item value="dynamic" priority="2" />
-      <Item value="LikeSearch" priority="1" />
+      <Item value="LikeSearch" priority="2" />
       <Item value="repo" priority="0" />
       <Item value="true" priority="4" />
       <Item value="canPage" priority="0" />
@@ -162,9 +163,9 @@
       <Item value="PlaceHolderDataGrid1" priority="0" />
       <Item value="LiteralGrid1" priority="1" />
       <Item value="ppi" priority="0" />
-      <Item value="this" priority="1" />
+      <Item value="this" priority="5" />
       <Item value="_sortDesc" priority="1" />
-      <Item value="if" priority="13" />
+      <Item value="if" priority="15" />
       <Item value="Page" priority="5" />
       <Item value="else" priority="3" />
       <Item value="_orderBy" priority="1" />
@@ -202,12 +203,12 @@
       <Item value="IQueryable`0" priority="0" />
       <Item value="thr" priority="4" />
       <Item value="NotImplementedException`0" priority="2" />
-      <Item value="IQueryBuilder`0" priority="0" />
+      <Item value="IQueryBuilder`0" priority="1" />
       <Item value="ArgumentOutOfRangeException`0" priority="1" />
       <Item value="DateTime`0" priority="7" />
       <Item value="hasFrom" priority="0" />
       <Item value="hasTo" priority="0" />
-      <Item value="Where" priority="1" />
+      <Item value="Where" priority="2" />
       <Item value="object" priority="8" />
       <Item value="WhereItem`0" priority="2" />
       <Item value="BetweenExpression" priority="2" />
@@ -216,7 +217,7 @@
       <Item value="SqlParams" priority="2" />
       <Item value="List&lt;object&gt;" priority="2" />
       <Item value="class" priority="1" />
-      <Item value="wi" priority="5" />
+      <Item value="wi" priority="6" />
       <Item value="CreateParams`0" priority="0" />
       <Item value="fromIsMin" priority="0" />
       <Item value="toIsMin" priority="0" />
@@ -239,7 +240,7 @@
       <Item value="end" priority="1" />
       <Item value="date2" priority="3" />
       <Item value="dat1Expected" priority="1" />
-      <Item value="date1" priority="1" />
+      <Item value="date1" priority="2" />
       <Item value="date2Expected" priority="0" />
       <Item value="SqlParam" priority="1" />
       <Item value="Count`1" priority="0" />
@@ -268,17 +269,24 @@
       <Item value="noEndAnd" priority="1" />
       <Item value="IgnoreCase" priority="0" />
       <Item value="paramList" priority="0" />
+      <Item value="value1" priority="3" />
+      <Item value="value2" priority="2" />
+      <Item value="null" priority="1" />
+      <Item value="Contract`0" priority="1" />
+      <Item value="ArgumentNullException`0" priority="1" />
+      <Item value="Tst" priority="0" />
+      <Item value="from" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Join`0" priority="0" />
       <Item value="Format`0" priority="6" />
       <Item value="Empty" priority="7" />
-      <Item value="IsNullOrWhiteSpace`0" priority="1" />
+      <Item value="IsNullOrWhiteSpace`0" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="ToArray`0" priority="1" />
       <Item value="Count" priority="4" />
-      <Item value="Add`0" priority="7" />
+      <Item value="Add`0" priority="8" />
       <Item value="AddRange`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:LikeSearch.PagingFactory">
@@ -290,11 +298,11 @@
       <Item value="Fail`0" priority="0" />
       <Item value="Contains`0" priority="1" />
       <Item value="Equals`0" priority="2" />
-      <Item value="AreEqual`0" priority="7" />
+      <Item value="AreEqual`0" priority="9" />
       <Item value="IsFalse`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
-      <Item value="Contains`0" priority="7" />
+      <Item value="Contains`0" priority="9" />
       <Item value="Reverse`1" priority="0" />
       <Item value="Replace`0" priority="2" />
       <Item value="ToString`0" priority="0" />
@@ -313,7 +321,7 @@
       <Item value="CreateCount`0" priority="0" />
       <Item value="AddBetween`0" priority="1" />
       <Item value="Create`0" priority="0" />
-      <Item value="AddWhere`0" priority="0" />
+      <Item value="AddWhere`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Samples.DataHelper">
       <Item value="ConnectionStr`0" priority="0" />
@@ -435,6 +443,9 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@LikeSearch.QueryBuilder">
       <Item value="WhereCommandBuilder`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Contracts.Contract">
+      <Item value="Requires`1" priority="1" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
